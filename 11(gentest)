@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+#define int long long
+
+#define loop(i, l, r) for(int i = (int) l; i <= (int) r; i++)
+#define rloop(i, r, l) for(int i = (int) r; i >= (int) l; i--)
+#define vi vector<int> 
+#define eb emplace_back
+#define ii pair<int, int> 
+#define fi first
+#define se second
+
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+#define rand rng
+#define endl '\n'
+#define bitCnt __builtin_popcountll
+#define bitClz __builtin_clzll
+
+const int maxN = 1e5 + 5;
+
+int N; 
+
+signed main()
+{
+	freopen("test.txt", "w", stdout);
+	N = 1e5;
+	cout << N << endl;
+	loop(i, 1, N) cout << rand() % (int)1e9 << " ";
+}
