@@ -1,0 +1,51 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+// #define int long long
+#define loop(i, l, r) for(int i = (int) l; i <= (int) r; i++)
+#define rloop(i, r, l) for(int i = (int) r; i >= (int) l; i--)
+#define vi vector<int>
+#define rb emplace_back
+#define ii pair<int,int>
+#define fi first
+#define se second
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+#define endl '\n'
+#define rand rng
+#define bitCnt __builtin_popcountll
+#define bitClz __builtin_clzll
+const int maxN = 3e3 + 5;
+string s;
+bool split[maxN];
+bool isvowel(int i)
+{
+	return s[i] == 'a' or s[i] == 'e' or s[i] == 'i' or s[i] == 'o' or s[i] == 'u';
+}
+bool typo(int i)
+{
+	return (!isvowel(i) and !isvowel(i + 1) and !isvowel(i + 2) and !(s[i] == s[i + 1] and s[i + 1] == s[i + 2]));
+}
+signed main()
+{
+//	freopen("", "r", stdin);
+//	freopen("", "w", stdout);
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+	cin >> s;
+	int N = s.length();
+	loop(pos, 0, N - 3)
+	{
+		if(typo(pos)) 
+		{
+			split[pos + 1] = 1;
+			pos++;
+		}
+	}
+	loop(pos,  0, N - 1) 
+	{
+		cout << s[pos];
+		if(split[pos]) cout << ' ';
+	}
+}
