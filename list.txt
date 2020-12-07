@@ -1,5 +1,5 @@
 EASY
-https://codeforces.com/problemset/problem/205/B (code: done) (medium - hard, greedy, trivial)
+https://codeforces.com/problemset/problem/205/B (medium, greedy, trivial) (code: done) (test: done)
 bai xac suat cua hiep (easy, trivial)
 https://codeforces.com/problemset/problem/858/C (easy, greedy) (code: done)
 https://codeforces.com/contest/940/problem/B (easy, greedy) (code: done)
