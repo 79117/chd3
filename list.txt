@@ -1,9 +1,9 @@
 EASY
-https://codeforces.com/problemset/problem/205/B (medium, greedy, trivial) (code: done) (test: done)
-bai xac suat cua hiep (easy, trivial)
-https://codeforces.com/problemset/problem/858/C (easy, greedy) (code: done)
-https://codeforces.com/contest/940/problem/B (easy, greedy) (code: done) (test: done)
-https://atcoder.jp/contests/arc081/tasks/arc081_b (code: done)
+https://codeforces.com/problemset/problem/205/B (medium, greedy, trivial) (code: done) (test: done) (statement: done)
+bai xac suat cua hiep (easy, trivial) (code: done) (test: NOT done) (statement: done)
+https://codeforces.com/problemset/problem/858/C (easy, greedy) (code: done) (test: done) (statement: done)
+https://codeforces.com/contest/940/problem/B (easy, greedy) (code: done) (test: done) (statement: done)
+https://atcoder.jp/contests/arc081/tasks/arc081_b (code: done) (test: done) (statement: done)
 MEDIUM
 //knapsack
 https://codeforces.com/problemset/problem/453/B (medium - hard, dp bitmask) (code: done) (chi in ra ket qua thoi ko nang qua)
