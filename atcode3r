@@ -1,0 +1,48 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+//#define int long long
+
+#define loop(i, l, r) for(int i = (int) l; i <= (int) r; i++)
+#define rloop(i, r, l) for(int i = (int) r; i >= (int) l; i--)
+#define vi vector<int> 
+#define eb emplace_back
+#define ii pair<int, int> 
+#define fi first
+#define se second
+
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+#define rand rng
+#define endl '\n'
+#define bitCnt __builtin_popcountll
+#define bitClz __builtin_clzll
+
+#define ld long double
+
+const int mod = 1e9 + 7;
+
+int N, ans;
+string a, b;
+
+signed main()
+{
+	cin >> N;
+	cin >> a >> b;
+	loop(i, 0, N - 1)
+	{
+		if(a[i] == b[i]) 
+		{
+			if(i == 0) ans = 3;
+			else if(a[i - 1] == b[i - 1]) ans = 2ll * ans % mod;
+		}
+		else 
+		{
+			if(i == 0) ans = 6;
+			else if(a[i - 1] == b[i - 1]) ans = 2ll * ans % mod;
+			else ans = 3ll * ans % mod;
+			i++;
+		}
+	}
+	cout << ans;
+}
