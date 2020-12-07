@@ -15,7 +15,7 @@ https://codeforces.com/problemset/problem/1327/F (hard, dp) (code: done) (ha gio
 HARD
 https://codeforces.com/problemset/problem/205/B (medium - hard, greedy)// doi de thanh tat ca cac  so bang nhau  
 (co nen de n = 3000?) (code: done)
-https://codeforces.com/gym/101821/problem/A (hard, vui ve, nhan xet) (code: done)
+https://codeforces.com/gym/101821/problem/A (hard, vui ve, nhan xet) (code: done) (statement: done)
 
 additional
 
