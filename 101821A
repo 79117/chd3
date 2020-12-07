@@ -1,0 +1,72 @@
+//#pragma comment(linker, "/stack:200000000")
+//#pragma GCC optimize("Ofast")
+//#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,tune=native")
+
+#include<bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+
+using namespace __gnu_pbds;
+using namespace std;
+
+#define int long long
+
+#define mp make_pair
+#define pb push_back
+#define eb emplace_back
+#define fi first
+#define se second
+#define ii pair<int, int>
+#define vi vector<int>
+#define vii vector<ii>
+
+typedef long double ld;
+
+const int mod = 1e9+7;
+const ld pi = 4*atan((ld)1);
+
+/*
+cach code:
+1. Nhap khung ra, xet het cac truog hop cho ro rang
+2. Comment vao bai
+3. Code tung phan, check can than.
+4. Kiem tra lai constraint.
+*/
+bool vs[2000005]; int b, c, r, d, val = 1e6;
+signed main()
+{
+//	freopen(".inp", "r", stdin);
+//	freopen(".out", "w", stdout);
+//	ios_base::sync_with_stdio(false);
+//	cin.tie(0);
+//	cout.tie(0);
+	cin >> b >> c >> r >> d;
+//	cout << b << " " << c << " " << r << " " << d << endl;
+	int lf = r % val, rt= val - lf, step = 0, tot = b * val + c;
+	if(d + c >= val) return cout << tot / r, 0;
+	while(1)
+	{
+		if(vs[d]) return cout << tot / r, 0;
+		else 
+		{
+			vs[d] = 1;
+			if(d >= rt)
+			{
+				step++;
+				d -= rt;
+				c += rt;
+			}
+			else if(c >= lf) 
+			{
+				step++;
+				c -= lf;
+				d += lf;
+			}
+			else break;
+		}
+	}
+	cout << min(tot / r, step);
+}
+
+
+
+ 
